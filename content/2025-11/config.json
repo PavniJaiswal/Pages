@@ -1,0 +1,272 @@
+{
+  "year": 2025,
+  "month": 11,
+  "title": "November 2025 Edition",
+  "themeTitleLine1": "The",
+  "themeTitleLine2": "Beginnings",
+  "coverDescription": "November ushers in a special theme: Every journey starts somewhere!",
+  "coverColor": "#D8E3C5",
+  "editorNote": "Dear Readers, Welcome to November's edition, where we explore the universal theme of beginnings—in spirituality, philosophy, food, travel, and life itself. From A.'s reflections on spiritual fusion to P_eace's agnostic musings, from simple home cooking to small European cities, this month's contributors share wisdom on starting anew, living intentionally, and finding beauty in the everyday. Whether you're questioning existence with P_eace or savoring Pearl's poetry, we hope you'll find inspiration for your own fresh starts. Happy reading, and here's to new beginnings.",
+  "columns": [
+    {
+      "id": "verses",
+      "title": "Verses",
+      "author": {
+        "name": "Pearl",
+        "bio": "A jumbled me in these lines",
+        "email": "pearlpavni14@gmail.com"
+      },
+      "excerpt": "A jumbled me in these lines",
+      "order": 5,
+      "theme": {
+        "primaryColor": "#7DD3FC",
+        "secondaryColor": "#FED7E2",
+        "headerStyle": "artistic",
+        "textColor": "#0C4A6E",
+        "fontFamily": "Calibri",
+        "fontStyle": "italic",
+        "headerFont": "Dancing Script",
+        "categoryLabel": "Poetry",
+        "backgroundColor": {
+          "light": "#F0F9FF",
+          "dark": "#082f49"
+        },
+        "contentTextColor": {
+          "light": "#0C4A6E",
+          "dark": "#BAE6FD"
+        }
+      }
+    },
+    {
+      "id": "fusion",
+      "title": "Fusion",
+      "author": {
+        "name": "Anshu",
+        "bio": "Ek Yatra - Khud se Khud Tak",
+        "email": "anshu.jaiswal52@gmail.com"
+      },
+      "excerpt": "Ek Yatra - Khud se Khud Tak",
+      "order": 1,
+      "theme": {
+        "primaryColor": "#FFB088",
+        "secondaryColor": "#FFD4BA",
+        "headerStyle": "artistic",
+        "textColor": "#5C2D14",
+        "fontFamily": "Georgia",
+        "fontStyle": "normal",
+        "headerFont": "Satisfy",
+        "categoryLabel": "Spiritual",
+        "backgroundColor": {
+          "light": "#FFF5F0",
+          "dark": "#3D1A0F"
+        },
+        "contentTextColor": {
+          "light": "#6B3416",
+          "dark": "#FFDBC4"
+        }
+      }
+    },
+    {
+      "id": "agnostic-perspective",
+      "title": "The Agnostic Perspective",
+      "author": {
+        "name": "P_eace",
+        "bio": "Everything under the sun and beyond through my lens",
+        "email": "askforpiyush@gmail.com"
+      },
+      "excerpt": "Everything under the sun and beyond through my lens",
+      "order": 2,
+      "theme": {
+        "primaryColor": "#9D7FBF",
+        "secondaryColor": "#000000",
+        "headerStyle": "artistic",
+        "textColor": "#E6E6FA",
+        "accentColor": "#B8A5E0",
+        "fontFamily": "Georgia",
+        "fontStyle": "normal",
+        "headerFont": "Merriweather",
+        "categoryLabel": "Philosophy",
+        "backgroundColor": {
+          "light": "#F8F4FF",
+          "dark": "#0A0012"
+        },
+        "contentTextColor": {
+          "light": "#2E0854",
+          "dark": "#E8D4FF"
+        }
+      }
+    },
+    {
+      "id": "ctrl-alt-think",
+      "title": "Ctrl+Alt+Think",
+      "author": {
+        "name": "Anonymous",
+        "bio": "Everyday life, the small things, not the big stuff",
+        "email": "anna.atl.usa@gmail.com"
+      },
+      "excerpt": "Everyday life, the small things, not the big stuff",
+      "order": 3,
+      "theme": {
+        "primaryColor": "#0D9488",
+        "secondaryColor": "#06B6D4",
+        "headerStyle": "artistic",
+        "textColor": "#F0FDFA",
+        "fontFamily": "system-ui",
+        "fontStyle": "normal",
+        "headerFont": "system-ui",
+        "categoryLabel": "Observations",
+        "backgroundColor": {
+          "light": "#F0FDFA",
+          "dark": "#042F2E"
+        },
+        "contentTextColor": {
+          "light": "#134E4A",
+          "dark": "#99F6E4"
+        }
+      }
+    },
+    {
+      "id": "eureka",
+      "title": "Eureka",
+      "author": {
+        "name": "Apollo",
+        "bio": "I am still deciding",
+        "email": "aviral.9.17@gmail.com"
+      },
+      "excerpt": "I am still deciding",
+      "order": 4,
+      "theme": {
+        "primaryColor": "#000000",
+        "secondaryColor": "#10B981",
+        "headerStyle": "artistic",
+        "textColor": "#D1FAE5",
+        "fontFamily": "Courier New",
+        "fontStyle": "normal",
+        "headerFont": "Courier New",
+        "categoryLabel": "Mystery",
+        "backgroundColor": {
+          "light": "#F0FDF4",
+          "dark": "#022C22"
+        },
+        "contentTextColor": {
+          "light": "#064E3B",
+          "dark": "#6EE7B7"
+        }
+      }
+    },
+    {
+      "id": "shuru-se-shuruat",
+      "title": "शुरू से शुरुआत",
+      "author": {
+        "name": "Lakshay",
+        "bio": "The Beginnings",
+        "email": "nagpallakshay414@gmail.com"
+      },
+      "excerpt": "The Beginnings",
+      "order": 6,
+      "theme": {
+        "primaryColor": "#9333EA",
+        "secondaryColor": "#FBBF24",
+        "headerStyle": "artistic",
+        "textColor": "#F3E8FF",
+        "fontFamily": "Georgia",
+        "fontStyle": "normal",
+        "headerFont": "Satisfy",
+        "categoryLabel": "Hindi",
+        "backgroundColor": {
+          "light": "#FAF5FF",
+          "dark": "#3B0764"
+        },
+        "contentTextColor": {
+          "light": "#581C87",
+          "dark": "#E9D5FF"
+        }
+      }
+    },
+    {
+      "id": "anamnisi",
+      "title": "anámnisi",
+      "author": {
+        "name": "anonymous",
+        "bio": "Remembrance, memories, recollection"
+      },
+      "excerpt": "Remembrance, memories, recollection",
+      "order": 7,
+      "theme": {
+        "primaryColor": "#9B4C56",
+        "secondaryColor": "#D4A5AA",
+        "headerStyle": "artistic",
+        "textColor": "#FFF5F7",
+        "fontFamily": "Georgia",
+        "fontStyle": "italic",
+        "headerFont": "Crimson Text",
+        "categoryLabel": "Memories",
+        "backgroundColor": {
+          "light": "#FFF5F7",
+          "dark": "#3A1F23"
+        },
+        "contentTextColor": {
+          "light": "#6B2737",
+          "dark": "#E8C5CC"
+        }
+      }
+    },
+    {
+      "id": "life-death-everything",
+      "title": "Life, death and everything in between",
+      "author": {
+        "name": "Vipasha",
+        "bio": "Life experiences, emotions, poetry",
+        "email": "vipashamittal@gmail.com"
+      },
+      "excerpt": "Life experiences, emotions, poetry",
+      "order": 8,
+      "theme": {
+        "primaryColor": "#0891B2",
+        "secondaryColor": "#06B6D4",
+        "headerStyle": "artistic",
+        "textColor": "#F0FDFA",
+        "fontFamily": "Georgia",
+        "fontStyle": "italic",
+        "headerFont": "Crimson Text",
+        "categoryLabel": "Poetry & Life",
+        "backgroundColor": {
+          "light": "#ECFEFF",
+          "dark": "#083344"
+        },
+        "contentTextColor": {
+          "light": "#0E7490",
+          "dark": "#67E8F9"
+        }
+      }
+    },
+    {
+      "id": "papaya-rules",
+      "title": "Papaya Rules",
+      "author": {
+        "name": "Arpit",
+        "bio": "About Papaya Rules. :)"
+      },
+      "excerpt": "About Papaya Rules. :)",
+      "order": 9,
+      "theme": {
+        "primaryColor": "#FF8000",
+        "secondaryColor": "#FF9E1B",
+        "headerStyle": "artistic",
+        "textColor": "#FFFFFF",
+        "fontFamily": "system-ui",
+        "fontStyle": "normal",
+        "headerFont": "system-ui",
+        "categoryLabel": "F1 Racing",
+        "backgroundColor": {
+          "light": "#FFF7ED",
+          "dark": "#1A0F00"
+        },
+        "contentTextColor": {
+          "light": "#9A3412",
+          "dark": "#FDBA74"
+        }
+      }
+    }
+  ]
+}

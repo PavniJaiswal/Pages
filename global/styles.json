@@ -1,0 +1,23 @@
+{
+  "colors": {
+    "primary": "#2C3E50",
+    "secondary": "#3498DB",
+    "background": "#FFFFFF",
+    "text": "#333333",
+    "border": "#E0E0E0"
+  },
+  "typography": {
+    "titleSize": 32,
+    "subtitleSize": 24,
+    "bodySize": 16,
+    "smallSize": 12
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32
+  }
+}
+

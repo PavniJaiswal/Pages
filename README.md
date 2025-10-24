@@ -1,97 +1,196 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Pages - Digital Magazine Platform
 
-# Getting Started
+**Your words, our pages**
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+A beautiful, content-driven digital magazine platform built with React Native and Material-UI.
 
-## Step 1: Start Metro
+## ✨ Features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- **Beautiful Design**: Artistic, literary aesthetic with handwritten fonts and elegant typography
+- **Dark & Light Mode**: Full theme support with custom sage green color scheme
+- **Editor's Notes**: Personal touches from the editor for each edition
+- **Poetry Corner**: "Verses" by Pearl in every edition
+- **Pen Friend Feature**: Save your favorite authors
+- **Responsive**: Works beautifully on mobile, tablet, and desktop
+- **Easy Content Management**: Add new editions without changing code
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 🚀 Quick Start
 
-```sh
-# Using npm
+### Run in Web Browser
+
+```bash
+npm install --legacy-peer-deps
+npm run web
+```
+
+The app will open at `http://localhost:3000`
+
+### Run on Mobile
+
+```bash
+# Install dependencies
+npm install --legacy-peer-deps
+
+# Start Metro bundler
 npm start
 
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
+# In another terminal:
+# For Android
 npm run android
 
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+# For iOS
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 📖 Current Edition
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+**November 2025 - "The Beginnings"** (Full Magazine Edition)
 
-## Step 3: Modify your app
+Featured columns:
+1. **Fusion** by A. - Spiritual journey in Hindi *(Peach theme, Satisfy script font)*
+2. **The Agnostic Perspective** by P_eace - Life through an open, questioning lens *(Metallic purple gradient, Georgia font)*
+3. **Ctrl+Alt+Think** by Anonymous - Everyday life and the small things *(Teal & cyan minimal theme, system font)*
+4. **Eureka** by Apollo - Mystery and uncertainty *(Black & green horror theme, Courier New)*
+5. **Verses** by Pearl - Poetry on Beginnings *(Light blue & pink theme, Calibri italic font)*
+6. **शुरू से शुरुआत** by Lakshay - The Beginnings in Hindi *(Purple & yellow artistic theme, Satisfy font)*
+7. **anámnisi** by anonymous - Remembrance, memories, recollection *(Soft burgundy theme, Crimson Text italic)*
+8. **Life, death and everything in between** by Vipasha - Life experiences, emotions, poetry *(Cyan & teal artistic theme, Crimson Text italic)*
+9. **Papaya Rules** by Arpit - McLaren F1 racing philosophy *(McLaren orange theme, system font)*
 
-Now that you have successfully run the app, let's make changes!
+## ✉️ Author Connections
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+Most authors can be contacted via email by clicking "Add Pen Pal" on their column:
+- A. (Fusion): anshu.jaiswal52@gmail.com
+- P_eace (The Agnostic Perspective): askforpiyush@gmail.com
+- Anonymous (Ctrl+Alt+Think): anna.atl.usa@gmail.com
+- Apollo (Eureka): aviral.9.17@gmail.com
+- Pearl (Verses): pearlpavni14@gmail.com
+- Lakshay (शुरू से शुरुआत): nagpallakshay414@gmail.com
+- Vipasha (Life, death and everything in between): vipashamittal@gmail.com
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+*Note: anámnisi and Papaya Rules authors have chosen to remain anonymous and do not accept direct connections.*
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## 🎨 Design
 
-## Congratulations! :tada:
+- **Fonts**: Great Vibes (script), Satisfy, Libre Baskerville, Crimson Text
+- **Color Scheme**: Sage green (#D8E3C5 light, #2C3428 dark)
+- **UI Framework**: Material-UI with custom theme
+- **Typography**: Literary serif fonts with elegant handwritten titles
 
-You've successfully run and modified your React Native App. :partying_face:
+## 📁 Project Structure
 
-### Now what?
+```
+content/
+  2025-11/              ← Current edition
+    config.json         ← Edition configuration
+    theme.json          ← Color theme
+    columns/            ← Article JSON files (10 columns)
+      
+global/
+  config.json           ← Magazine name, tagline
+  styles.json           ← Default colors
+  
+src/
+  components/           ← React components (6 screens)
+  context/              ← Theme & PenFriend contexts
+  navigation/           ← Screen navigation setup
+  utils/                ← Content & style loaders
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+web/
+  index.html            ← Web entry point
+  webpack.config.js     ← Web bundler config
+```
 
-# Troubleshooting
+## 🆕 Adding New Editions
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+See **ADD_NEW_EDITION.md** for a complete guide.
 
-# Learn More
+Quick steps:
+1. Create folder: `content/2025-12/`
+2. Add `config.json`, `theme.json`, and column files
+3. Update `src/utils/contentLoader.ts` to include new month
+4. Restart the app
 
-To learn more about React Native, take a look at the following resources:
+**Important**: Always include the "Verses" column by Pearl as the first article. See **VERSES_COLUMN_GUIDE.md** for details.
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 🎯 Key Files
+
+- **`global/config.json`** - Magazine name and tagline
+- **`global/styles.json`** - Default colors and typography
+- **`content/2025-11/config.json`** - November edition configuration
+- **`src/utils/contentLoader.ts`** - Available months list
+- **`src/components/`** - All UI screens
+
+## 🛠️ Technologies
+
+- React Native (with Web support)
+- Material-UI (MUI)
+- React Navigation
+- TypeScript
+- Webpack (for web)
+- Context API (state management)
+
+## 📱 Screens
+
+1. **Home** - Landing page with introduction
+2. **Cover** - Beautiful edition cover with theme
+3. **Table of Contents** - Editor's note and article list
+4. **Column Reader** - Full article view
+5. **Archive** - Browse all editions
+
+## 🎨 Customization
+
+### Change Magazine Name
+Edit `global/config.json`:
+```json
+{
+  "magazineName": "Your Name",
+  "tagline": "Your Tagline",
+  "about": "Your description"
+}
+```
+
+### Change Colors
+Edit edition's `theme.json`:
+```json
+{
+  "colors": {
+    "primary": "#YourColor",
+    "secondary": "#AccentColor",
+    "accent": "#AnotherColor"
+  }
+}
+```
+
+### Add New Article
+Create `content/2025-11/columns/your-article.json`:
+```json
+{
+  "content": "# Your Title\n\n**By Author**\n\nYour content here..."
+}
+```
+
+Add to `config.json` columns array.
+
+## 📚 Documentation
+
+- **README.md** - This file (overview & quick start)
+- **ADD_NEW_EDITION.md** - Complete guide for adding monthly editions
+- **VERSES_COLUMN_GUIDE.md** - Standards for the recurring Verses poetry column
+
+## 🔗 URL Routing
+
+All screens have unique URLs:
+- Home: `/`
+- Archive: `/archive`
+- Edition Cover: `/edition/2025-11`
+- Table of Contents: `/edition/2025-11/contents`
+- Article: `/edition/2025-11/article/verses`
+
+## 📄 License
+
+This project is open source and available for use.
+
+---
+
+**Pages** - Where stories come alive, one page at a time. 📖✨

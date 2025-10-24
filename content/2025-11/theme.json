@@ -1,0 +1,17 @@
+{
+  "colors": {
+    "primary": "#D8E3C5",
+    "secondary": "#ACB087",
+    "accent": "#C5CDAE",
+    "text": "#4A5238"
+  },
+  "darkMode": {
+    "primary": "#2C3428",
+    "secondary": "#8A9570",
+    "text": "#D5E0C5"
+  },
+  "font": {
+    "title": "Great Vibes"
+  }
+}
+
