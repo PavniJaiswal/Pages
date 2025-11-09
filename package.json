@@ -1,12 +1,15 @@
 {
-  "name": "MyApp",
+  "name": "Pages",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://pavnijaiswal.github.io/Pages",
   "scripts": {
+    "predeploy": "npm run build:web",
+    "deploy": "gh-pages -d build",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "web": "webpack serve --mode development",
-    "build:web": "webpack --mode production",
+    "build:web": "webpack --mode production --output-path build",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
@@ -52,6 +55,7 @@
     "@types/react-test-renderer": "^19.1.0",
     "babel-loader": "^10.0.0",
     "eslint": "^8.19.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.4",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
