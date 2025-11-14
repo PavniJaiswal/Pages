@@ -1,0 +1,151 @@
+PAGES MAGAZINE APP - ARCHITECTURE SUMMARY
+==========================================
+
+WHAT IS THIS APP?
+A React Native Web digital magazine platform publishing monthly themed editions. Content is entirely JSON-driven - no code changes needed to add new editions.
+
+KEY ARCHITECTURAL INSIGHT
+Content drives app = All content (editions, articles, themes) is declarative JSON that the app renders dynamically.
+
+TECH STACK
+- React 19 + React Native Web (web/iOS/Android)
+- React Navigation 7 (with URL query params)
+- Material-UI 7 (theming, components)
+- Webpack 5 (bundler)
+- TypeScript (type safety)
+
+NAVIGATION (5 SCREENS)
+1. Home (/) - Landing, edition list
+2. Cover (?edition=2025-11) - Magazine cover
+3. Index (?edition=2025-11&view=contents) - Table of contents
+4. Column (?edition=2025-11&article=verses) - Full article
+5. Archive (?view=archive) - Browse all editions
+
+HOW CONTENT WORKS
+1. Month folders in /content/YYYY-MM/
+2. Each contains config.json (edition metadata + column definitions)
+3. Each contains theme.json (edition colors)
+4. Subdirectory /columns/ with JSON files for each article
+5. contentLoader.ts discovers available months and loads content dynamically
+
+KEY FILES TO KNOW
+- src/utils/contentLoader.ts - Loads content JSON (UPDATE THIS TO ADD MONTHS)
+- src/navigation/RootNavigator.tsx - Screen definitions and URL routing
+- src/context/ThemeContext.tsx - Light/dark mode management
+- content/2025-11/config.json - Edition structure (columns array)
+- global/config.json - Magazine name/tagline
+- webpack.config.js - Web build, watches /content for hot reload
+
+THEME SYSTEM (3 LAYERS)
+1. Global theme (global/styles.json) - UI chrome defaults
+2. Edition theme (content/YYYY-MM/theme.json) - Edition-wide colors
+3. Column theme (config.json columns[].theme) - Per-article styling
+   Most specific wins. All support light/dark mode colors.
+
+DATA STRUCTURE (TypeScript types in src/types/index.ts)
+- MonthConfig: Edition metadata + columns array
+- Column: id, title, author, content (loaded separately), theme
+- ColumnTheme: primaryColor, secondaryColor, fontFamily, headerFont, dark/light colors
+- Theme: colors object with primary/secondary/text, plus darkMode overrides
+
+ADDING A NEW EDITION (6 STEPS)
+1. mkdir -p content/2025-12/columns
+2. Create config.json with edition info + columns array (MUST include "verses" column as order 1)
+3. Create theme.json with colors (optional but recommended)
+4. Create column JSON files in /columns/ subdirectory
+5. Update src/utils/contentLoader.ts getAvailableMonths() to include '2025-12'
+6. npm run web (changes auto-reload via webpack hotwatch)
+
+CRITICAL: Verses Column
+- MUST be first column (order: 1) in every edition
+- Specific theme colors and fonts (see ADD_NEW_EDITION.md)
+- Don't change: primaryColor, fontFamily, headerFont
+- See VERSES_COLUMN_GUIDE.md for exact specs
+
+BUILD COMMANDS
+Dev:     npm install --legacy-peer-deps && npm run web (port 3000, hot reload)
+Build:   npm run build:web (outputs to /build)
+Deploy:  npm run deploy (GitHub Pages)
+Mobile:  npm start, then npm run android/ios
+
+IMPORTANT PATTERNS
+1. All content loading is async (loadMonthConfig, loadColumnContent)
+2. useThemeMode() hook for light/dark mode everywhere
+3. useMediaQuery() for responsive (MUI breakpoints)
+4. Dynamic requires for bundler: require(`../../content/${monthId}/...`)
+5. Navigation uses typed params via RootStackParamList
+6. URL routing in RootNavigator.tsx via getStateFromPath/getPathFromState
+
+RESPONSIVE DESIGN
+- Material-UI built-in breakpoints
+- isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+- sx prop for inline responsive styles
+
+MOST CRITICAL FILE RELATIONSHIPS
+contentLoader.ts (discovers months) 
+  → loads config.json (contains columns array)
+  → loads theme.json (edition colors)
+  → loads column JSON files (content field)
+  → rendered by ColumnScreen with column theme styling
+
+Navigation routing (RootNavigator.tsx)
+  → converts query params to React Navigation state
+  → CoverScreen/IndexScreen/ColumnScreen receive monthId/columnId
+  → All screens use useThemeMode() for dark mode
+
+TROUBLESHOOTING
+- Month not showing? Update getAvailableMonths()
+- Column not visible? Check id matches filename, in columns array, has order field
+- Theme not applying? Check darkMode object exists in theme.json
+- Hot reload not working? Ensure content/*.json is being edited
+
+NOVEMBER 2025 EDITION
+Theme: "The Beginnings" (9 columns)
+1. Verses (Pearl) - Poetry
+2. Fusion (Anshu) - Spiritual
+3. The Agnostic Perspective (P_eace) - Philosophy
+4. Ctrl+Alt+Think (Anonymous) - Observations
+5. Eureka (Apollo) - Mystery
+6. शुरू से शुरुआत (Lakshay) - Hindi
+7. anámnisi (anonymous) - Memories
+8. Life, death and everything (Vipasha) - Poetry
+9. Papaya Rules (Arpit) - F1 Racing
+
+REPO STRUCTURE
+/src
+  /components (5 screens + ThemeToggleButton)
+  /context (ThemeContext, PenFriendContext)
+  /navigation (RootNavigator, types)
+  /utils (contentLoader, styleLoader)
+  /types (TypeScript interfaces)
+  /theme (MUI theme config)
+/content/YYYY-MM (add new months here)
+  /columns (article JSON files)
+  config.json (edition metadata)
+  theme.json (colors)
+/global (magazine-level config)
+/web (HTML entry point, webpack polyfills)
+
+DEPLOYMENT PIPELINE
+1. Edit content in /content/YYYY-MM/
+2. Update contentLoader.ts if new month
+3. npm run web (test locally)
+4. npm run build:web && npm run deploy (GitHub Pages)
+5. Live at https://pavnijaiswal.github.io/Pages
+
+MOST IMPORTANT FILES FOR CLAUDE
+1. src/utils/contentLoader.ts - How content is discovered/loaded
+2. src/types/index.ts - All data structures
+3. content/2025-11/config.json - Example of edition structure
+4. src/navigation/RootNavigator.tsx - How navigation and URLs work
+5. src/context/ThemeContext.tsx - Theme system
+6. ADD_NEW_EDITION.md - How to add editions (same as CLAUDE.md steps)
+
+NEXT AI DEVELOPER TIPS
+- Always update contentLoader.ts getAvailableMonths() when adding editions
+- Check column.id matches the JSON filename
+- Ensure column.order field is numeric and unique
+- Always include "Verses" column as first (order 1) - it has special styling
+- Test in both light and dark modes: useThemeMode() hook
+- Hot reload watches /content/**/*.json - no server restart needed
+- All navigation must use RootStackParamList types

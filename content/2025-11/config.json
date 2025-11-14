@@ -6,37 +6,8 @@
   "themeTitleLine2": "Beginnings",
   "coverDescription": "November ushers in a special theme: Every journey starts somewhere!",
   "coverColor": "#D8E3C5",
-  "editorNote": "Dear Readers, Welcome to November's edition, where we explore the universal theme of beginnings—in spirituality, philosophy, food, travel, and life itself. From A.'s reflections on spiritual fusion to P_eace's agnostic musings, from simple home cooking to small European cities, this month's contributors share wisdom on starting anew, living intentionally, and finding beauty in the everyday. Whether you're questioning existence with P_eace or savoring Pearl's poetry, we hope you'll find inspiration for your own fresh starts. Happy reading, and here's to new beginnings.",
+  "editorNote": "Hello Readers,\nThank you all for taking out some moments from your busy schedules to check out this new creation of ours. Pages is an attempt to create for all of us a platform, where we can speak and share our hearts, or minds, or just let the muscle memory jot some sentences down!\nThis is an effort to build a community of differently-minded individuals, and share their stories and anecdotes with a larger group. We will eagerly await any feedback you have to share, and look ahead for enlarging this set.\nWe bring to you, not just 12 amazingly crafted columns, but bring ahead an opportunity to make the author of your choice, a pen pal! Go ahead and maybe you will find stories you never knew you needed to read!\nHere’s to the beginning, with a hope of many more to come!",
   "columns": [
-    {
-      "id": "verses",
-      "title": "Verses",
-      "author": {
-        "name": "Pearl",
-        "bio": "A jumbled me in these lines",
-        "email": "pearlpavni14@gmail.com"
-      },
-      "excerpt": "A jumbled me in these lines",
-      "order": 5,
-      "theme": {
-        "primaryColor": "#7DD3FC",
-        "secondaryColor": "#FED7E2",
-        "headerStyle": "artistic",
-        "textColor": "#0C4A6E",
-        "fontFamily": "Calibri",
-        "fontStyle": "italic",
-        "headerFont": "Dancing Script",
-        "categoryLabel": "Poetry",
-        "backgroundColor": {
-          "light": "#F0F9FF",
-          "dark": "#082f49"
-        },
-        "contentTextColor": {
-          "light": "#0C4A6E",
-          "dark": "#BAE6FD"
-        }
-      }
-    },
     {
       "id": "fusion",
       "title": "Fusion",
@@ -97,64 +68,6 @@
       }
     },
     {
-      "id": "ctrl-alt-think",
-      "title": "Ctrl+Alt+Think",
-      "author": {
-        "name": "Anonymous",
-        "bio": "Everyday life, the small things, not the big stuff",
-        "email": "anna.atl.usa@gmail.com"
-      },
-      "excerpt": "Everyday life, the small things, not the big stuff",
-      "order": 3,
-      "theme": {
-        "primaryColor": "#0D9488",
-        "secondaryColor": "#06B6D4",
-        "headerStyle": "artistic",
-        "textColor": "#F0FDFA",
-        "fontFamily": "system-ui",
-        "fontStyle": "normal",
-        "headerFont": "system-ui",
-        "categoryLabel": "Observations",
-        "backgroundColor": {
-          "light": "#F0FDFA",
-          "dark": "#042F2E"
-        },
-        "contentTextColor": {
-          "light": "#134E4A",
-          "dark": "#99F6E4"
-        }
-      }
-    },
-    {
-      "id": "eureka",
-      "title": "Eureka",
-      "author": {
-        "name": "Apollo",
-        "bio": "I am still deciding",
-        "email": "aviral.9.17@gmail.com"
-      },
-      "excerpt": "I am still deciding",
-      "order": 4,
-      "theme": {
-        "primaryColor": "#000000",
-        "secondaryColor": "#10B981",
-        "headerStyle": "artistic",
-        "textColor": "#D1FAE5",
-        "fontFamily": "Courier New",
-        "fontStyle": "normal",
-        "headerFont": "Courier New",
-        "categoryLabel": "Mystery",
-        "backgroundColor": {
-          "light": "#F0FDF4",
-          "dark": "#022C22"
-        },
-        "contentTextColor": {
-          "light": "#064E3B",
-          "dark": "#6EE7B7"
-        }
-      }
-    },
-    {
       "id": "shuru-se-shuruat",
       "title": "शुरू से शुरुआत",
       "author": {
@@ -165,21 +78,21 @@
       "excerpt": "The Beginnings",
       "order": 6,
       "theme": {
-        "primaryColor": "#9333EA",
-        "secondaryColor": "#FBBF24",
+        "primaryColor": "#777777",
+        "secondaryColor": "#EEEEEE",
         "headerStyle": "artistic",
-        "textColor": "#F3E8FF",
+        "textColor": "#444444",
         "fontFamily": "Georgia",
         "fontStyle": "normal",
         "headerFont": "Satisfy",
-        "categoryLabel": "Hindi",
+        "categoryLabel": "Poetry",
         "backgroundColor": {
-          "light": "#FAF5FF",
-          "dark": "#3B0764"
+          "light": "#EEEEEE",
+          "dark": "#222222"
         },
         "contentTextColor": {
-          "light": "#581C87",
-          "dark": "#E9D5FF"
+          "light": "#555555",
+          "dark": "#DDDDDD"
         }
       }
     },
@@ -187,56 +100,56 @@
       "id": "anamnisi",
       "title": "anámnisi",
       "author": {
-        "name": "anonymous",
+        "name": "Anonymous",
         "bio": "Remembrance, memories, recollection"
       },
       "excerpt": "Remembrance, memories, recollection",
-      "order": 7,
+      "order": 11,
       "theme": {
-        "primaryColor": "#9B4C56",
-        "secondaryColor": "#D4A5AA",
+        "primaryColor": "#D5C0B3",
+        "secondaryColor": "#D7F5D3",
         "headerStyle": "artistic",
-        "textColor": "#FFF5F7",
-        "fontFamily": "Georgia",
+        "textColor": "#6B2737",
+        "fontFamily": "Clarendon",
         "fontStyle": "italic",
         "headerFont": "Crimson Text",
         "categoryLabel": "Memories",
         "backgroundColor": {
-          "light": "#FFF5F7",
-          "dark": "#3A1F23"
+          "light": "#F7F5F3",
+          "dark": "#173513"
         },
         "contentTextColor": {
-          "light": "#6B2737",
-          "dark": "#E8C5CC"
+          "light": "#173513",
+          "dark": "#D7F5D3"
         }
       }
     },
     {
-      "id": "life-death-everything",
-      "title": "Life, death and everything in between",
+      "id": "verses",
+      "title": "Verses",
       "author": {
-        "name": "Vipasha",
-        "bio": "Life experiences, emotions, poetry",
-        "email": "vipashamittal@gmail.com"
+        "name": "Pearl",
+        "bio": "A jumbled me in these lines",
+        "email": "pearlpavni14@gmail.com"
       },
-      "excerpt": "Life experiences, emotions, poetry",
-      "order": 8,
+      "excerpt": "A jumbled me in these lines",
+      "order": 5,
       "theme": {
-        "primaryColor": "#0891B2",
-        "secondaryColor": "#06B6D4",
+        "primaryColor": "#7DD3FC",
+        "secondaryColor": "#FED7E2",
         "headerStyle": "artistic",
-        "textColor": "#F0FDFA",
-        "fontFamily": "Georgia",
+        "textColor": "#0C4A6E",
+        "fontFamily": "Calibri",
         "fontStyle": "italic",
-        "headerFont": "Crimson Text",
-        "categoryLabel": "Poetry & Life",
+        "headerFont": "Dancing Script",
+        "categoryLabel": "Poetry",
         "backgroundColor": {
-          "light": "#ECFEFF",
-          "dark": "#083344"
+          "light": "#F0F9FF",
+          "dark": "#082f49"
         },
         "contentTextColor": {
-          "light": "#0E7490",
-          "dark": "#67E8F9"
+          "light": "#0C4A6E",
+          "dark": "#BAE6FD"
         }
       }
     },
@@ -248,7 +161,7 @@
         "bio": "About Papaya Rules. :)"
       },
       "excerpt": "About Papaya Rules. :)",
-      "order": 9,
+      "order": 3,
       "theme": {
         "primaryColor": "#FF8000",
         "secondaryColor": "#FF9E1B",
@@ -257,7 +170,7 @@
         "fontFamily": "system-ui",
         "fontStyle": "normal",
         "headerFont": "system-ui",
-        "categoryLabel": "F1 Racing",
+        "categoryLabel": "Racing",
         "backgroundColor": {
           "light": "#FFF7ED",
           "dark": "#1A0F00"
@@ -265,6 +178,177 @@
         "contentTextColor": {
           "light": "#9A3412",
           "dark": "#FDBA74"
+        }
+      }
+    },
+    {
+      "id": "the-eternal-archive",
+      "title": "The Eternal Archive",
+      "author": {
+        "name": "Apollo",
+        "bio": "Chasing what legends remember",
+        "email": "apollo.pages.07@gmail.com"
+      },
+      "excerpt": "Chasing what legends remember",
+      "order": 7,
+      "theme": {
+        "primaryColor": "#7bA59E",
+        "secondaryColor": "#0B3B42",
+        "headerStyle": "artistic",
+        "textColor": "#F0FDFA",
+        "fontFamily": "system-ui",
+        "fontStyle": "normal",
+        "headerFont": "system-ui",
+        "categoryLabel": "Epics",
+        "backgroundColor": {
+          "light": "#F0FDFA",
+          "dark": "#003037"
+        },
+        "contentTextColor": {
+          "light": "#134E4A",
+          "dark": "#D0D6D6"
+        }
+      }
+    },
+    {
+      "id": "inside-out",
+      "title": "Inside Out",
+      "author": {
+        "name": "Ennui",
+        "bio": "Meet the little voices inside my head",
+        "email": "rileys.emotions.io@gmail.com"
+      },
+      "excerpt": "Meet the little voices inside my head",
+      "order": 4,
+      "theme": {
+        "primaryColor": "#9B4C56",
+        "secondaryColor": "#D4A5AA",
+        "headerStyle": "artistic",
+        "textColor": "#FFF5F7",
+        "fontFamily": "Georgia",
+        "fontStyle": "italic",
+        "headerFont": "Crimson Text",
+        "categoryLabel": "Diary",
+        "backgroundColor": {
+          "light": "#FFF5F7",
+          "dark": "#3A1F23"
+        },
+        "contentTextColor": {
+          "light": "#6B2737",
+          "dark": "#E8C5CC"
+        }
+      }
+    },
+    {
+      "id": "art-exploration",
+      "title": "Art Exploration",
+      "author": {
+        "name": "g.art",
+        "bio": "Journey of Art Exploration"
+      },
+      "excerpt": "Journey of Art Exploration",
+      "order": 9,
+      "theme": {
+        "primaryColor": "#703B3B",
+        "secondaryColor": "#A18D6D",
+        "headerStyle": "artistic",
+        "textColor": "#F0FDFA",
+        "fontFamily": "system-ui",
+        "fontStyle": "normal",
+        "headerFont": "system-ui",
+        "categoryLabel": "Explorations",
+        "backgroundColor": {
+          "light": "#F3EBE3",
+          "dark": "#1F1709"
+        },
+        "contentTextColor": {
+          "light": "#1E282C",
+          "dark": "#E2C99D"
+        }
+      }
+    },
+    {
+      "id": "beyond-the-boundary-ropes",
+      "title": "Beyond the Boundary Ropes",
+      "author": {
+        "name": "chillichicken",
+        "bio": "with Naan over Noodles"
+      },
+      "excerpt": "with Naan over Noodles",
+      "order": 10,
+      "theme": {
+        "primaryColor": "#078BDC",
+        "secondaryColor": "#F5895A",
+        "headerStyle": "artistic",
+        "textColor": "#F0FDFA",
+        "fontFamily": "Georgia",
+        "fontStyle": "italic",
+        "headerFont": "Crimson Text",
+        "categoryLabel": "Sports",
+        "backgroundColor": {
+          "light": "#ECFEFF",
+          "dark": "#053040"
+        },
+        "contentTextColor": {
+          "light": "#0480A0",
+          "dark": "#FFE0CA"
+        }
+      }
+    },
+    {
+      "id": "fountain-of-thoughts",
+      "title": "Fountain of thoughts",
+      "author": {
+        "name": "Corvus",
+        "bio": "A writer, poet using words to escape mundane reality",
+        "email": "yamini2006chauhan@gmail.com"
+      },
+      "excerpt": "A writer, poet using words to escape mundane reality",
+      "order": 8,
+      "theme": {
+        "primaryColor": "#23038A",
+        "secondaryColor": "#CB8F24",
+        "headerStyle": "artistic",
+        "textColor": "#F3E8FF",
+        "fontFamily": "Georgia",
+        "fontStyle": "normal",
+        "headerFont": "Satisfy",
+        "categoryLabel": "Thoughts",
+        "backgroundColor": {
+          "light": "#FAF5FF",
+          "dark": "#0B0734"
+        },
+        "contentTextColor": {
+          "light": "#581C87",
+          "dark": "#E9D5FF"
+        }
+      }
+    },
+    {
+      "id": "animals",
+      "title": "(Party) Animals",
+      "author": {
+        "name": "saltandthesea",
+        "bio": "kya se kya ho gaya, dekhte dekhte ..."
+      },
+      "excerpt": "kya se kya ho gaya, dekhte dekhte ...",
+      "order": 12,
+      "theme": {
+        "primaryColor": "#838996",
+        "secondaryColor": "#BCC6CC",
+        "headerStyle": "artistic",
+        "textColor": "#343434",
+        "fontFamily": "Georgia",
+        "fontStyle": "italic",
+        "headerFont": "Crimson Text",
+        "categoryLabel": "Animals",
+        "backgroundColor": {
+          "light": "#F0F0FF",
+          "dark": "#333344"
+        },
+        "contentTextColor": {
+          "light": "#1F1F3F",
+          "dark": "#E8E8F9"
         }
       }
     }

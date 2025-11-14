@@ -9,7 +9,9 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "web": "webpack serve --mode development",
+    "web:fresh": "npm run clean && npm run web",
     "build:web": "webpack --mode production --output-path build",
+    "clean": "rm -rf web-build node_modules/.cache build",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"

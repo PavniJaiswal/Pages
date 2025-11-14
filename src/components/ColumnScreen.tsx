@@ -273,7 +273,7 @@ const ColumnScreen: React.FC<ColumnScreenProps> = ({ navigation, route }) => {
                 )}
               </Box>
               {/* Hide button for columns 7 and 9 (anamnisi and papaya-rules) */}
-              {!isMobile && column.id !== 'anamnisi' && column.id !== 'papaya-rules' && (
+              {!isMobile && column.author.email && (
                 <Button
                   variant={column.author.email ? 'contained' : (isPenFriend(column.author.name) ? 'outlined' : 'contained')}
                   startIcon={
@@ -314,7 +314,7 @@ const ColumnScreen: React.FC<ColumnScreenProps> = ({ navigation, route }) => {
                 >
                   {column.author.email 
                     ? 'Add Pen Pal' 
-                    : (isPenFriend(column.author.name) ? 'Remove Pen Friend' : 'Make Pen Friend')
+                    : ''
                   }
                 </Button>
               )}

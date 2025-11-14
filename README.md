@@ -9,7 +9,6 @@ A beautiful, content-driven digital magazine platform built with React Native an
 - **Beautiful Design**: Artistic, literary aesthetic with handwritten fonts and elegant typography
 - **Dark & Light Mode**: Full theme support with custom sage green color scheme
 - **Editor's Notes**: Personal touches from the editor for each edition
-- **Poetry Corner**: "Verses" by Pearl in every edition
 - **Pen Friend Feature**: Save your favorite authors
 - **Responsive**: Works beautifully on mobile, tablet, and desktop
 - **Easy Content Management**: Add new editions without changing code
@@ -41,41 +40,6 @@ npm run android
 # For iOS
 npm run ios
 ```
-
-## 📖 Current Edition
-
-**November 2025 - "The Beginnings"** (Full Magazine Edition)
-
-Featured columns:
-1. **Fusion** by A. - Spiritual journey in Hindi *(Peach theme, Satisfy script font)*
-2. **The Agnostic Perspective** by P_eace - Life through an open, questioning lens *(Metallic purple gradient, Georgia font)*
-3. **Ctrl+Alt+Think** by Anonymous - Everyday life and the small things *(Teal & cyan minimal theme, system font)*
-4. **Eureka** by Apollo - Mystery and uncertainty *(Black & green horror theme, Courier New)*
-5. **Verses** by Pearl - Poetry on Beginnings *(Light blue & pink theme, Calibri italic font)*
-6. **शुरू से शुरुआत** by Lakshay - The Beginnings in Hindi *(Purple & yellow artistic theme, Satisfy font)*
-7. **anámnisi** by anonymous - Remembrance, memories, recollection *(Soft burgundy theme, Crimson Text italic)*
-8. **Life, death and everything in between** by Vipasha - Life experiences, emotions, poetry *(Cyan & teal artistic theme, Crimson Text italic)*
-9. **Papaya Rules** by Arpit - McLaren F1 racing philosophy *(McLaren orange theme, system font)*
-
-## ✉️ Author Connections
-
-Most authors can be contacted via email by clicking "Add Pen Pal" on their column:
-- A. (Fusion): anshu.jaiswal52@gmail.com
-- P_eace (The Agnostic Perspective): askforpiyush@gmail.com
-- Anonymous (Ctrl+Alt+Think): anna.atl.usa@gmail.com
-- Apollo (Eureka): aviral.9.17@gmail.com
-- Pearl (Verses): pearlpavni14@gmail.com
-- Lakshay (शुरू से शुरुआत): nagpallakshay414@gmail.com
-- Vipasha (Life, death and everything in between): vipashamittal@gmail.com
-
-*Note: anámnisi and Papaya Rules authors have chosen to remain anonymous and do not accept direct connections.*
-
-## 🎨 Design
-
-- **Fonts**: Great Vibes (script), Satisfy, Libre Baskerville, Crimson Text
-- **Color Scheme**: Sage green (#D8E3C5 light, #2C3428 dark)
-- **UI Framework**: Material-UI with custom theme
-- **Typography**: Literary serif fonts with elegant handwritten titles
 
 ## 📁 Project Structure
 
@@ -110,8 +74,6 @@ Quick steps:
 2. Add `config.json`, `theme.json`, and column files
 3. Update `src/utils/contentLoader.ts` to include new month
 4. Restart the app
-
-**Important**: Always include the "Verses" column by Pearl as the first article. See **VERSES_COLUMN_GUIDE.md** for details.
 
 ## 🎯 Key Files
 

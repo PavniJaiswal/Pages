@@ -8,8 +8,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'web-build'),
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: '/Pages',
   },
+  cache: false, // Disable caching in development
   devServer: {
     static: {
       directory: path.join(__dirname, 'web-build'),
@@ -17,8 +18,18 @@ module.exports = {
     compress: true,
     port: 3000,
     hot: true,
+    liveReload: true,
     open: true,
     historyApiFallback: true,
+    watchFiles: {
+      paths: ['content/**/*.json', 'src/**/*'],
+      options: {
+        usePolling: true,
+      },
+    },
+    headers: {
+      'Cache-Control': 'no-store',
+    },
   },
   module: {
     rules: [
